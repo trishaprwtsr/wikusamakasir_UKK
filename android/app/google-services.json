@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1034894425548",
+    "project_id": "wikusamakasir-ukk",
+    "storage_bucket": "wikusamakasir-ukk.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1034894425548:android:55cb5789d3b17dd8287169",
+        "android_client_info": {
+          "package_name": "com.example.wikusamakasir_ukk"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCq9QDodQS63SMxf36gLOe0h0SroPZfu_I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
