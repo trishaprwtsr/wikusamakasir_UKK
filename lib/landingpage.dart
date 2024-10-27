@@ -12,19 +12,18 @@ class LandingPage extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            // Gambar di atas, lebih kecil dan diatur ukurannya
+
             Container(
-              height: 400, // Atur tinggi gambar
-              width: 400,  // Atur lebar gambar (misal kotak)
+              height: 400, 
+              width: 400,  
               decoration: const BoxDecoration(
                 image: DecorationImage(
-                  image: AssetImage('assets/openingkopi.png'), // Ganti dengan path ke gambar lokal
-                  fit: BoxFit.contain, // Menyesuaikan gambar dengan container
+                  image: AssetImage('assets/openingkopi.png'), 
+                  fit: BoxFit.contain, 
                 ),
               ),
             ),
-            const SizedBox(height: 20), // Jarak antara gambar dan teks besar
-            // Teks besar
+            const SizedBox(height: 20), 
             Text(
               'Ayo, Kelola sistem dengan mudah',
               style: GoogleFonts.poppins(
@@ -33,8 +32,7 @@ class LandingPage extends StatelessWidget {
               ),
               textAlign: TextAlign.center,
             ),
-            const SizedBox(height: 10), // Jarak antara teks besar dan teks kecil
-            // Teks kecil
+            const SizedBox(height: 10),
             Text(
               'Login sekarang untuk mulai mengatur operasional cafe',
               style: GoogleFonts.poppins(
@@ -43,17 +41,16 @@ class LandingPage extends StatelessWidget {
               ),
               textAlign: TextAlign.center,
             ),
-            const SizedBox(height: 30), // Jarak antara teks kecil dan tombol
-            // Tombol
+            const SizedBox(height: 30), 
             ElevatedButton.icon(
               onPressed: () {
-                // Aksi ketika tombol ditekan, navigasi ke LoginPage
+                
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => LoginPage()), // Pindah ke halaman LoginPage
+                  MaterialPageRoute(builder: (context) => LoginPage()), 
                 );
               },
-              icon: const Icon(Icons.arrow_forward, color: Colors.white), // Ikon panah setelah teks
+              icon: const Icon(Icons.arrow_forward, color: Colors.white),
               label: Text(
                 'Mulai',
                 style: GoogleFonts.poppins(
@@ -62,12 +59,12 @@ class LandingPage extends StatelessWidget {
                 ),
               ),
               style: ElevatedButton.styleFrom(
-                backgroundColor: const Color(0xFF55433C), // Warna tombol sesuai (#55433C)
+                backgroundColor: const Color(0xFF55433C), 
                 padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 15),
                 textStyle: const TextStyle(fontSize: 18),
               ),
             ),
-            const SizedBox(height: 20), // Jarak antara tombol dan bawah layar
+            const SizedBox(height: 20), 
           ],
         ),
       ),

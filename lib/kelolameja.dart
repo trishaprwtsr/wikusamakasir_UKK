@@ -12,6 +12,7 @@ class KelolaMejaPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: const Color(0xFFF8EFE7),
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         elevation: 0,

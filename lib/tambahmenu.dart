@@ -19,7 +19,7 @@ class _TambahMenuPageState extends State<TambahMenuPage> {
   String code = '';
   double basePrice = 0;
   double salePrice = 0;
-  String category = 'Minuman'; // Default value for dropdown
+  String category = 'Minuman'; 
   double weight = 0.0;
   String unit = '';
   String description = '';
@@ -50,7 +50,7 @@ class _TambahMenuPageState extends State<TambahMenuPage> {
         weight: weight,
         unit: unit,
         description: description,
-        imageUrl: '', // Image URL will be added after upload
+        imageUrl: '', 
       );
       await _menuService.addMenu(newMenu, _imageFile);
       Navigator.pop(context);
@@ -60,7 +60,7 @@ class _TambahMenuPageState extends State<TambahMenuPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xFFF8EFE7), // Warna latar belakang
+      backgroundColor: const Color(0xFFF8EFE7), 
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         elevation: 0,
@@ -74,8 +74,8 @@ class _TambahMenuPageState extends State<TambahMenuPage> {
           'Tambah Produk',
           style: GoogleFonts.poppins(
             color: Colors.black,
-            fontWeight: FontWeight.bold, // Set font to bold
-            fontSize: 18, // Font size for AppBar title
+            fontWeight: FontWeight.bold, 
+            fontSize: 18, 
           ),
         ),
         centerTitle: true,
@@ -131,8 +131,8 @@ class _TambahMenuPageState extends State<TambahMenuPage> {
               ElevatedButton(
                 onPressed: _saveProduct,
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.brown, // Background color
-                  foregroundColor: Colors.white, // Text color
+                  backgroundColor: Colors.brown, 
+                  foregroundColor: Colors.white, 
                 ),
                 child: Text('Simpan Produk', style: GoogleFonts.poppins(fontSize: 16)),
               ),

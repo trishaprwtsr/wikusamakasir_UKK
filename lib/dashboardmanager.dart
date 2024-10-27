@@ -68,11 +68,11 @@ class _DashboardManagerState extends State<DashboardManager> {
             children: [
               Row(
                 children: [
-                  CircleAvatar(
+                  const CircleAvatar(
                     backgroundImage: AssetImage('assets/alvaro.jpeg'),
                     radius: 30,
                   ),
-                  SizedBox(width: 12),
+                  const SizedBox(width: 12),
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
@@ -86,19 +86,19 @@ class _DashboardManagerState extends State<DashboardManager> {
                       ),
                     ],
                   ),
-                  Spacer(),
+                  const Spacer(),
                   IconButton(
-                    icon: Icon(Icons.logout, color: Colors.black),
+                    icon: const Icon(Icons.logout, color: Colors.black),
                     onPressed: () {
                       Navigator.pushReplacement(
                         context,
-                        MaterialPageRoute(builder: (context) => LandingPage()), // Navigasi langsung ke LandingPage
+                        MaterialPageRoute(builder: (context) => LandingPage()), 
                       );
                     },
                   ),
                 ],
               ),
-              SizedBox(height: 20),
+              const SizedBox(height: 20),
               GestureDetector(
                 onTap: () => _selectDate(context), // Show date picker
                 child: InputDecorator(
@@ -152,11 +152,11 @@ class _DashboardManagerState extends State<DashboardManager> {
                       children: snapshot.data!.docs.map((doc) {
                         final data = doc.data() as Map<String, dynamic>;
                         return Card(
-                          elevation: 3, // Add shadow effect for the card
-                          margin: EdgeInsets.symmetric(vertical: 8, horizontal: 16), // Margin between cards
-                          color: Colors.white, // Background color of the card
+                          elevation: 3, 
+                          margin: const EdgeInsets.symmetric(vertical: 8, horizontal: 16), 
+                          color: Colors.white, 
                           shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(10), // Rounded corners
+                            borderRadius: BorderRadius.circular(10),
                           ),
                           child: ListTile(
                             title: Text(

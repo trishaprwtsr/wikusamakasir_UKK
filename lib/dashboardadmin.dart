@@ -72,7 +72,7 @@ class DashboardAdmin extends StatelessWidget {
               iconSize: 33,  // Set the icon size
               fontSize: 13,  // Set the font size for the card title
             ),
-            Spacer(), // Push the Logout button to the bottom
+            const Spacer(), // Push the Logout button to the bottom
             // Logout button
             GestureDetector(
               onTap: () {
@@ -119,8 +119,8 @@ class AdminOptionCard extends StatelessWidget {
   final VoidCallback onTap;
   final double width;
   final double height;
-  final double iconSize; // New parameter for icon size
-  final double fontSize; // New parameter for text size
+  final double iconSize; 
+  final double fontSize; 
 
   AdminOptionCard({
     required this.icon,
@@ -128,8 +128,8 @@ class AdminOptionCard extends StatelessWidget {
     required this.onTap,
     required this.width,
     required this.height,
-    required this.iconSize, // New parameter
-    required this.fontSize, // New parameter
+    required this.iconSize, 
+    required this.fontSize, 
   });
 
   @override
@@ -148,11 +148,11 @@ class AdminOptionCard extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Icon(icon, size: iconSize, color: Colors.black54), // Use icon size parameter
-                SizedBox(width: 16), // Space between icon and text
+                const SizedBox(width: 16), // Space between icon and text
                 Text(
                   title,
                   style: TextStyle(
-                    fontSize: fontSize, // Use font size parameter
+                    fontSize: fontSize,
                     fontWeight: FontWeight.w600,
                   ),
                 ),

@@ -28,7 +28,7 @@ class _DashboardKasir2State extends State<DashboardKasir2> {
       'imagePath': 'assets/cappucino.png',
       'price': '14000',
       'starValue': '4.5',
-      'category': 'Minuman', // Menambahkan kategori
+      'category': 'Minuman', 
     },
     {
       'title': 'Double Beef Burger',
@@ -36,7 +36,7 @@ class _DashboardKasir2State extends State<DashboardKasir2> {
       'imagePath': 'assets/burger.png',
       'price': '14000',
       'starValue': '4.8',
-      'category': 'Snack', // Menambahkan kategori
+      'category': 'Snack', 
     },
     {
       'title': 'Cinnamon Roll',
@@ -44,7 +44,7 @@ class _DashboardKasir2State extends State<DashboardKasir2> {
       'imagePath': 'assets/cinnamon.png',
       'price': '10000',
       'starValue': '4.7',
-      'category': 'Snack', // Menambahkan kategori
+      'category': 'Snack', 
     },
     {
       'title': 'Kopi Gula Aren',
@@ -52,7 +52,7 @@ class _DashboardKasir2State extends State<DashboardKasir2> {
       'imagePath': 'assets/gulaaren.png',
       'price': '12000',
       'starValue': '4.6',
-      'category': 'Minuman', // Menambahkan kategori
+      'category': 'Minuman', 
     },
     {
       'title': 'Matcha Latte',
@@ -60,7 +60,7 @@ class _DashboardKasir2State extends State<DashboardKasir2> {
       'imagePath': 'assets/matcha.png',
       'price': '18000',
       'starValue': '4.4',
-      'category': 'Minuman', // Menambahkan kategori
+      'category': 'Minuman', 
     },
     {
       'title': 'Karamel Macchiato',
@@ -68,7 +68,7 @@ class _DashboardKasir2State extends State<DashboardKasir2> {
       'imagePath': 'assets/macchiato.png',
       'price': '15000',
       'starValue': '4.2',
-      'category': 'Minuman', // Menambahkan kategori
+      'category': 'Minuman', 
     },
   ];
 
@@ -206,7 +206,7 @@ class _DashboardKasir2State extends State<DashboardKasir2> {
                     fontWeight: FontWeight.w600,
                   ),
                   labelColor: Colors.white,
-                  unselectedLabelColor: Color(0xff52555a),
+                  unselectedLabelColor: const Color(0xff52555a),
                   indicatorPadding: const EdgeInsets.all(1),
                   dragStartBehavior: DragStartBehavior.down,
                   tabs: ['Semua', 'Minuman', 'Snack'].map((e) {

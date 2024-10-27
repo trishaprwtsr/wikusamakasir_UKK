@@ -4,7 +4,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'tambahmenu.dart';
 import 'menu_model.dart';
 import 'menu_service.dart';
-import 'editmenu.dart'; // Import halaman edit menu
+import 'editmenu.dart';
 
 class KelolaMenu extends StatefulWidget {
   const KelolaMenu({Key? key}) : super(key: key);
@@ -26,16 +26,16 @@ class _KelolaMenuState extends State<KelolaMenu> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xFFF8EFE7), // Background color #F8EFE7
+      backgroundColor: const Color(0xFFF8EFE7), 
       appBar: AppBar(
-        backgroundColor: const Color(0xFFF8EFE7), // AppBar background color
+        backgroundColor: const Color(0xFFF8EFE7), 
         title: Text(
           "Data Minuman & Makanan",
           style: GoogleFonts.poppins(
             color: Colors.black,
             fontSize: 20,
             fontWeight: FontWeight.bold,
-          ), // Font style for AppBar title
+          ), 
         ),
         centerTitle: true,
       ),
@@ -91,7 +91,7 @@ class _KelolaMenuState extends State<KelolaMenu> {
               child: ElevatedButton.icon(
                 style: ElevatedButton.styleFrom(
                   padding: const EdgeInsets.all(16),
-                  backgroundColor: Colors.brown, // Button color
+                  backgroundColor: Colors.brown,
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(8),
                   ),
@@ -100,8 +100,8 @@ class _KelolaMenuState extends State<KelolaMenu> {
                 label: Text(
                   'Tambah produk',
                   style: GoogleFonts.poppins(
-                    color: Colors.white, // Set text color
-                    fontSize: 16, // Font size for button label
+                    color: Colors.white, 
+                    fontSize: 16, 
                   ),
                 ),
                 onPressed: () {
@@ -113,7 +113,7 @@ class _KelolaMenuState extends State<KelolaMenu> {
                     ),
                   ).then((value) {
                     setState(() {
-                      _menuStream = _menuService.getAllMenus(); // Refresh menu list after adding product
+                      _menuStream = _menuService.getAllMenus(); 
                     });
                   });
                 },
@@ -133,7 +133,7 @@ class _KelolaMenuState extends State<KelolaMenu> {
       child: ListTile(
         leading: ClipRRect(
           borderRadius: BorderRadius.circular(8.0),
-          child: Image.network( // Use Image.network to load from URL
+          child: Image.network( 
             menu.imageUrl,
             width: 50,
             height: 50,
@@ -142,15 +142,15 @@ class _KelolaMenuState extends State<KelolaMenu> {
         ),
         title: Text(
           menu.name,
-          style: GoogleFonts.poppins(fontSize: 14), // Font size for item title
+          style: GoogleFonts.poppins(fontSize: 14),
         ),
         subtitle: Text(
           menu.code,
-          style: GoogleFonts.poppins(fontSize: 14), // Font size for item code
+          style: GoogleFonts.poppins(fontSize: 14), 
         ),
         trailing: Text(
           "Rp. ${menu.salePrice}",
-          style: GoogleFonts.poppins(fontSize: 12), // Font size for price
+          style: GoogleFonts.poppins(fontSize: 12),
         ),
         onTap: () {
           // Navigate to edit page with selected menu
@@ -161,7 +161,7 @@ class _KelolaMenuState extends State<KelolaMenu> {
             ),
           ).then((value) {
             setState(() {
-              _menuStream = _menuService.getAllMenus(); // Refresh menu list after editing product
+              _menuStream = _menuService.getAllMenus(); 
             });
           });
         },

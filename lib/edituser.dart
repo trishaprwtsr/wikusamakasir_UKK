@@ -93,7 +93,7 @@ class EditUserPage extends StatelessWidget {
                 onPressed: () async {
                   // Update user data
                   await firebaseService.updateUser(UserModel(
-                    id: user.id, // pastikan id diisi
+                    id: user.id, 
                     name: nameController.text,
                     email: emailController.text,
                     role: selectedRole!,
@@ -105,11 +105,11 @@ class EditUserPage extends StatelessWidget {
                 },
                 child: Text(
                   'Simpan',
-                  style: TextStyle(color: Colors.white), // Mengubah warna teks menjadi putih
+                  style: TextStyle(color: Colors.white), 
                 ),
                 style: ElevatedButton.styleFrom(
                   backgroundColor: Colors.brown,
-                  padding: EdgeInsets.symmetric(horizontal: 20, vertical: 12),
+                  padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(10),
                   ),

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:google_fonts/google_fonts.dart'; // Import Google Fonts
-import 'menu_model.dart'; // Import model kamu
-import 'menu_service.dart'; // Import service kamu
+import 'package:google_fonts/google_fonts.dart'; 
+import 'menu_model.dart'; 
+import 'menu_service.dart'; 
 
 class EditMenuPage extends StatefulWidget {
   final MenuModel menu;
@@ -56,7 +56,7 @@ class _EditMenuPageState extends State<EditMenuPage> {
     if (_formKey.currentState!.validate()) {
       // Mengupdate menu
       MenuModel updatedMenu = MenuModel(
-        id: widget.menu.id, // Menggunakan ID yang sama
+        id: widget.menu.id, 
         name: _nameController.text,
         code: _codeController.text,
         basePrice: double.tryParse(_basePriceController.text) ?? 0.0,
@@ -65,7 +65,7 @@ class _EditMenuPageState extends State<EditMenuPage> {
         weight: double.tryParse(_weightController.text) ?? 0.0,
         unit: _unitController.text,
         description: _descriptionController.text,
-        imageUrl: widget.menu.imageUrl, // Tetap menggunakan URL gambar yang sama
+        imageUrl: widget.menu.imageUrl, 
       );
 
       try {
@@ -82,9 +82,9 @@ class _EditMenuPageState extends State<EditMenuPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xFFF8EFE7), // Warna latar belakang
+      backgroundColor: const Color(0xFFF8EFE7), 
       appBar: AppBar(
-        backgroundColor: const Color(0xFFF8EFE7), // Warna AppBar
+        backgroundColor: const Color(0xFFF8EFE7),
         title: Text(
           'Edit Menu',
           style: GoogleFonts.poppins(
@@ -108,7 +108,7 @@ class _EditMenuPageState extends State<EditMenuPage> {
           key: _formKey,
           child: ListView(
             children: [
-              // Menggunakan GoogleFonts untuk gaya teks
+
               TextFormField(
                 controller: _nameController,
                 decoration: InputDecoration(
@@ -122,7 +122,7 @@ class _EditMenuPageState extends State<EditMenuPage> {
                 ),
                 validator: (value) => value!.isEmpty ? 'Nama tidak boleh kosong' : null,
               ),
-              const SizedBox(height: 16), // Spasi antar field
+              const SizedBox(height: 16), 
               TextFormField(
                 controller: _codeController,
                 decoration: InputDecoration(
@@ -228,7 +228,7 @@ class _EditMenuPageState extends State<EditMenuPage> {
                 onPressed: _updateMenu,
                 style: ElevatedButton.styleFrom(
                   padding: const EdgeInsets.all(16),
-                  backgroundColor: Colors.brown, // Warna tombol
+                  backgroundColor: Colors.brown, 
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(8),
                   ),

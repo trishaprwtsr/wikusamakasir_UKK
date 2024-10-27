@@ -43,7 +43,7 @@ class OrderService {
       await FirebaseFirestore.instance.collection('orders').add(orderData);
     } catch (e) {
       print("Error saving order: $e");
-      throw e; // Anda dapat melemparkan error untuk ditangani di atas
+      throw e; 
     }
   }
 

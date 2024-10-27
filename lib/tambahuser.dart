@@ -18,7 +18,7 @@ class _TambahUserPageState extends State<TambahUserPage> {
   String _name = '';
   String _email = '';
   String _password = '';
-  File? _imageFile; // Untuk menyimpan file gambar
+  File? _imageFile; 
   final ImagePicker _picker = ImagePicker();
 
   Future<void> _pickImage() async {
@@ -118,7 +118,7 @@ class _TambahUserPageState extends State<TambahUserPage> {
                         'password': _password,
                         'role': _selectedRole,
                         'status': 'Aktif',
-                        'imageUrl': imageUrl, // Simpan URL gambar di Firestore
+                        'imageUrl': imageUrl, 
                       });
 
                       Navigator.pushReplacement(

@@ -86,7 +86,7 @@ class _LoginPageState extends State<LoginPage> {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                // Gambar dan Teks (sama seperti sebelumnya)
+                
                 Container(
                   height: 230,
                   width: 230,

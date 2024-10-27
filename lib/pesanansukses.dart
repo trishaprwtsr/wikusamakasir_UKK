@@ -8,7 +8,7 @@ class PesananSukses extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xFFF9EDE5), // Warna latar belakang
+      backgroundColor: const Color(0xFFF9EDE5), 
       body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 20.0),
@@ -17,9 +17,9 @@ class PesananSukses extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               const Spacer(flex: 2),
-              // Gambar centang dari assets
+              
               Image.asset(
-                'assets/logosukses.png', // Ganti dengan path gambar centang di assets
+                'assets/logosukses.png', 
                 height: 100,
                 width: 100,
               ),
@@ -45,7 +45,7 @@ class PesananSukses extends StatelessWidget {
                 onPressed: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => RiwayatPesananScreen()), // Navigate to RiwayatPesananScreen
+                    MaterialPageRoute(builder: (context) => RiwayatPesananScreen()), 
                   );
                 },
                 style: ElevatedButton.styleFrom(

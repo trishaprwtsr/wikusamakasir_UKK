@@ -122,7 +122,7 @@ class KelolaUserPage extends StatelessWidget {
   Widget userCard(
     BuildContext context, {
     required String id,
-    required String? imageUrl, // Nullable
+    required String? imageUrl,
     required String name,
     required String email,
     required String role,

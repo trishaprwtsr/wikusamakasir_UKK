@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
       // Inisialisasi Firebase di dalam FutureBuilder
       future: Firebase.initializeApp(),
       builder: (context, snapshot) {
-        // Cek jika inisialisasi Firebase selesai
+       
         if (snapshot.connectionState == ConnectionState.done) {
           return MaterialApp(
             debugShowCheckedModeBanner: false,
@@ -32,7 +32,7 @@ class MyApp extends StatelessWidget {
           );
         }
 
-        // Jika inisialisasi masih berlangsung, tampilkan loading screen
+       
         if (snapshot.hasError) {
           return Center(child: Text('Error: ${snapshot.error}'));
         }

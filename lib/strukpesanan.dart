@@ -1,24 +1,34 @@
 import 'package:flutter/material.dart';
+import 'package:wikusamakasir_ukk/pesanansukses.dart';
 
 class StrukPesanan extends StatelessWidget {
    @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Color(0xFFF8EFE7), // Warna background app bar
+        backgroundColor: const Color(0xFFF8EFE7), 
         elevation: 0,
-        centerTitle: true, // Untuk menempatkan teks di tengah
+        centerTitle: true, 
         title: const Text(
           'Lihat Struk',
           style: TextStyle(
             color: Colors.black,
-            fontWeight: FontWeight.bold // Warna teks AppBar menjadi hitam
+            fontWeight: FontWeight.bold 
           ),
         ),
-        leading: Icon(Icons.arrow_back, color: Colors.black), // Warna icon kembali hitam
+        leading: IconButton(
+          icon: const Icon(Icons.arrow_back, color: Colors.black),
+          onPressed: () {
+            Navigator.pushReplacement(
+              context,
+              MaterialPageRoute(builder: (context) => PesananSukses()),
+            );
+          },
+        ),
       ),
+
       body: Container(
-        color: const Color(0xFFF8EFE7), // Warna background body
+        color: const Color(0xFFF8EFE7), 
         child: Center(
           child: Container(
             margin: const EdgeInsets.all(16),
@@ -34,7 +44,7 @@ class StrukPesanan extends StatelessWidget {
               ],
             ),
             child: Column(
-              crossAxisAlignment: CrossAxisAlignment.center, // Menempatkan elemen di tengah
+              crossAxisAlignment: CrossAxisAlignment.center, 
               children: [
                 const Text(
                   'Wikusama cafe',
@@ -75,7 +85,7 @@ class StrukPesanan extends StatelessWidget {
                 const SizedBox(height: 10),
                 const Divider(thickness: 1),
                 const SizedBox(height: 10),
-                // Bagian ini akan berada di tengah
+                
                 Center(
                   child: Column(
                     children: [

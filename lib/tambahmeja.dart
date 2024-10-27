@@ -10,7 +10,7 @@ class TambahMejaPage extends StatefulWidget {
 }
 
 class _TambahMejaPageState extends State<TambahMejaPage> {
-  String? selectedStatus = 'Kosong'; // Default status value
+  String? selectedStatus = 'Kosong'; 
   final TextEditingController kapasitasController = TextEditingController();
 
   @override
@@ -180,7 +180,7 @@ class _TambahMejaPageState extends State<TambahMejaPage> {
                     'kapasitas': kapasitasController.text,
                     'status': selectedStatus,
                   });
-                  // Setelah berhasil disimpan, kembali ke halaman KelolaMejaPage
+                  
                   Navigator.push(
                     context,
                     MaterialPageRoute(builder: (context) => KelolaMejaPage()),
@@ -214,7 +214,7 @@ class _TambahMejaPageState extends State<TambahMejaPage> {
   Future<String> _getNextTableNumber() async {
     final querySnapshot = await FirebaseFirestore.instance.collection('meja').get();
     final mejaCount = querySnapshot.docs.length;
-    return (mejaCount + 1).toString().padLeft(2, '0'); // Format nomor meja jadi 2 digit
+    return (mejaCount + 1).toString().padLeft(2, '0'); 
   }
 }
 

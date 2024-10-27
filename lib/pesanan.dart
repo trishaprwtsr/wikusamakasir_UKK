@@ -24,7 +24,7 @@ class _PesananPageState extends State<PesananPage> {
   @override
   void initState() {
     super.initState();
-    // Tambahkan cartItems ke OrderService saat membuat PesananPage
+    
     for (var item in widget.cartItems) {
       orderService.addItemToCart(item);
     }
@@ -162,7 +162,7 @@ class _PesananPageState extends State<PesananPage> {
               children: [
                 Container(
                   decoration: BoxDecoration(
-                    color: Colors.brown[700], // Warna latar belakang
+                    color: Colors.brown[700], 
                     shape: BoxShape.circle,
                   ),
                   child: IconButton(
@@ -185,7 +185,7 @@ class _PesananPageState extends State<PesananPage> {
                 ),
                 Container(
                   decoration: BoxDecoration(
-                    color: Colors.brown[700], // Warna latar belakang
+                    color: Colors.brown[700], 
                     shape: BoxShape.circle,
                   ),
                   child: IconButton(

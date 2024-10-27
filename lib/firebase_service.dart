@@ -9,7 +9,7 @@ class FirebaseService {
       await _firestore.collection('orders').add(orderData);
     } catch (e) {
       print('Error saving order: $e');
-      // Tambahkan penanganan error sesuai kebutuhanmu
+      
     }
   }
 
@@ -23,7 +23,7 @@ class FirebaseService {
       }
     } catch (e) {
       print('Error loading orders: $e');
-      // Tambahkan penanganan error sesuai kebutuhanmu
+      
     }
     return orders;
   }
@@ -38,7 +38,7 @@ class FirebaseService {
       }
     } catch (e) {
       print('Error loading tables: $e');
-      // Tambahkan penanganan error sesuai kebutuhanmu
+      
     }
     return tables;
   }

@@ -45,7 +45,7 @@ class WelcomePage extends StatelessWidget {
                 ),
                 textAlign: TextAlign.center,
               ),
-              const SizedBox(height: 50), // Jarak antara teks kecil dan tombol
+              const SizedBox(height: 50), 
 
               // Tombol Masuk Beranda
               ElevatedButton.icon(
@@ -66,9 +66,9 @@ class WelcomePage extends StatelessWidget {
                 ),
                 style: ElevatedButton.styleFrom(
                   padding: const EdgeInsets.symmetric(horizontal: 50, vertical: 15),
-                  backgroundColor: const Color(0xFF6A4234), // Warna tombol coklat
+                  backgroundColor: const Color(0xFF6A4234), 
                   shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(30), // Sudut melengkung tombol
+                    borderRadius: BorderRadius.circular(30), 
                   ),
                 ),
               ),

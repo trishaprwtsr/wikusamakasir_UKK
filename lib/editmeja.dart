@@ -72,7 +72,7 @@ class _EditMejaPageState extends State<EditMejaPage> {
           children: [
             TextField(
               controller: noMejaController,
-              decoration: InputDecoration(
+              decoration: const InputDecoration(
                 labelText: 'Nomor Meja',
                 border: OutlineInputBorder(),
               ),
@@ -80,7 +80,7 @@ class _EditMejaPageState extends State<EditMejaPage> {
             const SizedBox(height: 16),
             TextField(
               controller: kapasitasController,
-              decoration: InputDecoration(
+              decoration: const InputDecoration(
                 labelText: 'Kapasitas',
                 border: OutlineInputBorder(),
               ),
@@ -88,7 +88,7 @@ class _EditMejaPageState extends State<EditMejaPage> {
             const SizedBox(height: 16),
             DropdownButtonFormField<String>(
               value: status,
-              decoration: InputDecoration(
+              decoration: const InputDecoration(
                 labelText: 'Status',
                 border: OutlineInputBorder(),
               ),
